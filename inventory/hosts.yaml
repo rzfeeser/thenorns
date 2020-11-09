@@ -1,0 +1,51 @@
+---
+# describe the Linux host bender
+host1.planetexpress:
+        hostname: 10.10.2.3
+        port: 22
+        username: bender
+        password: alta3
+        platform: linux
+        groups:
+                - planetexpress
+        data:
+                site: earth
+                role: host
+                type: host
+                nested_data:
+                        catch_phrases:
+                                - "My story is a lot like yours, only more interesting 'cause it involves robots."
+                                - "Of all the friends I've had, you're the first."
+                        
+# describe the Linux host fry
+host2.planetexpress:
+        hostname: 10.10.2.4
+        port: 22
+        username: fry
+        password: alta3
+        platform: linux
+        groups:
+                - planetexpress
+        data:
+                site: earth
+                role: host
+                type: host
+                nested_data:
+                        catch_phrases:
+                                - "Space. It Seems To Go On Forever."
+                                - "No I'm... doesn't."
+
+# describe an Arista network switch
+# this switch may or maynot be related to the other hosts
+leaf00.penetwork:
+    hostname: sw-01
+    username: admin
+    password: alta3
+    port: 22
+    platform: eos
+    groups:
+        - penetwork
+    data:
+        site: penetwork
+        role: leaf
+        type: network_device

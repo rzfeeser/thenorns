@@ -1,0 +1,14 @@
+---
+planetexpress:
+        data:
+                headquarters: earth
+                ship: bessie
+                ship_owner: farnsworth
+                ship_captain: leela
+
+penetwork:
+        data:
+                vlans:
+                        100: research
+                        200: sales
+                        300: missiondata

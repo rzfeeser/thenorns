@@ -1,0 +1,238 @@
+2020-11-08 22:20:53,988 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:20:53,992 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 11, in biography
+    with open("biography.txt", w) as bio:
+NameError: name 'w' is not defined
+
+2020-11-08 22:20:53,993 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 11, in biography
+    with open("biography.txt", w) as bio:
+NameError: name 'w' is not defined
+
+2020-11-08 22:21:21,911 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:21:21,913 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 11, in biography
+    with open("biography.txt", w) as bio:
+NameError: name 'w' is not defined
+
+2020-11-08 22:21:21,914 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 11, in biography
+    with open("biography.txt", w) as bio:
+NameError: name 'w' is not defined
+
+2020-11-08 22:21:42,544 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:21:42,547 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in host.data.catch_phrases:
+NameError: name 'host' is not defined
+
+2020-11-08 22:21:42,548 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in host.data.catch_phrases:
+NameError: name 'host' is not defined
+
+2020-11-08 22:22:59,081 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:22:59,083 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in task.host.data.catch_phrases:
+AttributeError: 'dict' object has no attribute 'catch_phrases'
+
+2020-11-08 22:22:59,084 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in task.host.data.catch_phrases:
+AttributeError: 'dict' object has no attribute 'catch_phrases'
+
+2020-11-08 22:24:05,683 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:24:05,686 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in task.host.data.nested_data.catch_phrases:
+AttributeError: 'dict' object has no attribute 'nested_data'
+
+2020-11-08 22:24:05,687 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 12, in biography
+    for oneliner in task.host.data.nested_data.catch_phrases:
+AttributeError: 'dict' object has no attribute 'nested_data'
+
+2020-11-08 22:26:10,141 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:27:24,911 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 22:28:40,772 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 23:22:24,184 -  nornir.core -  WARNING -        run() - Task 'biography' has not been run – 0 hosts selected
+2020-11-08 23:22:39,614 -  nornir.core -  WARNING -        run() - Task 'biography' has not been run – 0 hosts selected
+2020-11-08 23:26:37,521 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 23:29:13,518 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'number': 5} on 2 hosts
+2020-11-08 23:29:13,521 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: biography() got an unexpected keyword argument 'number'
+
+2020-11-08 23:29:13,521 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: biography() got an unexpected keyword argument 'number'
+
+2020-11-08 23:29:39,260 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-08 23:34:03,714 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 00:26:10,533 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 00:26:10,536 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection("timmy", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'timmy' is not registered
+
+2020-11-09 00:26:10,537 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection("timmy", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'timmy' is not registered
+
+2020-11-09 00:27:22,189 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 00:27:22,192 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection(configuration=task.host.data)
+TypeError: open_connection() missing 1 required positional argument: 'connection'
+
+2020-11-09 00:27:22,192 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection(configuration=task.host.data)
+TypeError: open_connection() missing 1 required positional argument: 'connection'
+
+2020-11-09 00:27:42,467 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 00:27:42,470 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection(connection="linux", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'linux' is not registered
+
+2020-11-09 00:27:42,471 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 14, in biography
+    task.host.open_connection(connection="linux", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'linux' is not registered
+
+2020-11-09 00:33:57,789 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 00:37:02,393 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 03:06:11,937 -  nornir.core -     INFO -        run() - Running task 'biography' with args {'connection': 'ragnarok'} on 2 hosts
+2020-11-09 03:06:11,939 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: biography() got an unexpected keyword argument 'connection'
+
+2020-11-09 03:06:11,939 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: biography() got an unexpected keyword argument 'connection'
+
+2020-11-09 03:14:37,064 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 03:14:37,066 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 19, in biography
+    task.host.open_connection(connection="ragnarok", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'ragnarok' is not registered
+
+2020-11-09 03:14:37,067 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 19, in biography
+    task.host.open_connection(connection="ragnarok", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'ragnarok' is not registered
+
+2020-11-09 03:43:54,972 -  nornir.core -     INFO -        run() - Running task 'biography' with args {} on 2 hosts
+2020-11-09 03:43:54,977 - nornir.core.task -    ERROR -      start() - Host 'host1.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 20, in biography
+    task.host.open_connection(connection="ragnarok", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'ragnarok' is not registered
+
+2020-11-09 03:43:54,978 - nornir.core.task -    ERROR -      start() - Host 'host2.planetexpress': task 'biography' failed with traceback:
+Traceback (most recent call last):
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "nornir01-example.py", line 20, in biography
+    task.host.open_connection(connection="ragnarok", configuration=task.host.data)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/inventory.py", line 481, in open_connection
+    plugin = ConnectionPluginRegister.get_plugin(conn_name)
+  File "/home/student/.local/lib/python3.6/site-packages/nornir/core/plugins/register.py", line 75, in get_plugin
+    raise PluginNotRegistered(f"plugin {name!r} is not registered")
+nornir.core.exceptions.PluginNotRegistered: plugin 'ragnarok' is not registered
+
